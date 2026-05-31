@@ -152,6 +152,9 @@ swagger:
 aws:
     s3:
         region: ${AWS_REGION:ap-northeast-2}
+        endpoint: ${AWS_S3_ENDPOINT:}
+        presign-endpoint: ${AWS_S3_PRESIGN_ENDPOINT:}
+        path-style-access: ${AWS_S3_PATH_STYLE_ACCESS:false}
         bucket-name: ${AWS_S3_BUCKET_NAME:techtaurant-media}
         presigned-url-expire-minutes: ${AWS_S3_PRESIGNED_URL_EXPIRE_MINUTES:15}
 
